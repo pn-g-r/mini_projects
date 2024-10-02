@@ -19,5 +19,3 @@ for filename in filenames:
 
     new_filepath = os.path.join(directory, new_filename)
     os.rename(filepath, new_filepath)
-
-    print(repr(day))
