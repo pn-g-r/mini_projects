@@ -1,17 +1,20 @@
+import sqlite3
 import os
-import re
 
-directory = 'documents'
+dbfile = 'project12/data.db'
 
-filenames = os.listdir(f"project11/{directory}")
+conn = sqlite3.connect(dbfile)
+cursor = conn.cursor()
 
-all_emails = []
+query = """
+SELECT * FROM albums
+WHERE Title LIKE '%Live%' AND LENGTH(Title) > 10
+"""
 
-for filename in filenames:
-    with open(f"project11/{directory}/{filename}", 'r') as file:
-        content = file.read()
+cursor.execute(query)
+rows = cursor.fetchall()
 
-    emails = re.findall(r"[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}", content)
-    all_emails.extend(emails)
+for row in rows:
+    print(row)
 
-print(all_emails)
+conn.close()
