@@ -1,0 +1,7 @@
+Hello,
+
+Please contact us at support@example.com for further assistance.
+Thank you for your cooperation.
+
+Best regards,
+Customer Support Team
