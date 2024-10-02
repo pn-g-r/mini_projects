@@ -13,9 +13,11 @@ for filename in filenames:
         words = content.split()
         word_count = len(words)
 
-    day = datetime.now().strftime("%A")
+    day = datetime.now().strftime("%Y-%m-%d")
 
     new_filename = f'{filename[:4]}-{word_count}-{day}.txt'
 
     new_filepath = os.path.join(directory, new_filename)
     os.rename(filepath, new_filepath)
+
+    print(repr(day))
