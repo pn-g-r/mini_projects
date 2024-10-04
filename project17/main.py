@@ -32,7 +32,8 @@ button = st.button("Convert")
 if button:
     if conversion == "USD to EUR":
         euros = convert("USD", "EUR", input_value)
-        st.success(f"The result is {euros:.2f} EUR")
+        st.success(f"{input_value} USD is {euros:.2f} EUR")
     elif conversion == "EUR to USD":
         dollars = convert("EUR", "USD", input_value)
-        st.success(f"The result is {dollars:.2f} USD")
+        st.success(f"{input_value} EUR {dollars:.2f} USD")
+
