@@ -1,4 +1,4 @@
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 
 # Function to convert Celsius to Fahrenheit
 def celsius_to_fahrenheit(celsius):
@@ -10,7 +10,7 @@ def fahrenheit_to_celsius(fahrenheit):
 
 # Function to write input temperature and conversion result to a file
 def write_file(input_text):
-    with open('project22/file.txt', 'a') as file:
+    with open('project21/file.txt', 'a') as file:
         file.write(input_text + '\n')
 
 # Define the layout of the window
@@ -44,12 +44,11 @@ while True:
                 converted_temp = celsius_to_fahrenheit(input_temp)
                 result_text = f"{input_temp} °C = {converted_temp:.2f} °F"
                 window["output_temp"].update(f"{converted_temp:.2f} °F")
-                write_file(result_text)
             elif values["F_to_C"]:
                 converted_temp = fahrenheit_to_celsius(input_temp)
                 result_text = f"{input_temp} °F = {converted_temp:.2f} °C"
                 window["output_temp"].update(f"{converted_temp:.2f} °C")
-    
+            write_file(result_text)
         except ValueError:
             window["output_temp"].update("Invalid input!")
 
