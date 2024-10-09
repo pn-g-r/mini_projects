@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5e105f1177dc4f810a32dd57e713086c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5e105f1177dc4f810a32dd57e713086c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5e105f1177dc4f810a32dd57e713086c = L.map(
+                "map_5e105f1177dc4f810a32dd57e713086c",
+                {
+                    center: [34.56320532960842, -109.56000012672217],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5d6d0867d1d1446de89418f4036ce559 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5d6d0867d1d1446de89418f4036ce559.addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            var circle_marker_abf83ff45b75d4e1ff44a72bb018139c = L.circleMarker(
+                [38.8359985351562, -122.796501159668],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.54, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_abf83ff45b75d4e1ff44a72bb018139c.bindTooltip(
+                `<div>
+                     Loc: 7 km WNW of Cobb, CA Mag: 0.77
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5947b8214d7e1a04709a8cbce04ec46e = L.circleMarker(
+                [38.7929992675781, -122.759162902832],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.18, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_5947b8214d7e1a04709a8cbce04ec46e.bindTooltip(
+                `<div>
+                     Loc: 2 km N of The Geysers, CA Mag: 1.09
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d20ec14979b9519918962c974aaa2574 = L.circleMarker(
+                [36.5366, -117.5188],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_d20ec14979b9519918962c974aaa2574.bindTooltip(
+                `<div>
+                     Loc: 30 km NNE of Darwin, California Mag: 0.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_792f6ccbbde2915cc9ac6e5c41c62ac5 = L.circleMarker(
+                [34.0686667, -117.2493333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.58, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_792f6ccbbde2915cc9ac6e5c41c62ac5.bindTooltip(
+                `<div>
+                     Loc: 2 km NNE of Loma Linda, CA Mag: 0.79
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5d868cd3d782932a1735771081151383 = L.circleMarker(
+                [33.8873329, -117.0568314],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.64, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_5d868cd3d782932a1735771081151383.bindTooltip(
+                `<div>
+                     Loc: 9 km WSW of Beaumont, CA Mag: 1.32
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b3e9ba4895b3b4ef94f09d32bb4ad578 = L.circleMarker(
+                [38.7986679077148, -122.793502807617],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.06, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_b3e9ba4895b3b4ef94f09d32bb4ad578.bindTooltip(
+                `<div>
+                     Loc: 4 km NW of The Geysers, CA Mag: 1.03
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7509193c8c2e7e4149ff69c8acf7bd3b = L.circleMarker(
+                [37.1534996032715, -121.526496887207],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.74, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_7509193c8c2e7e4149ff69c8acf7bd3b.bindTooltip(
+                `<div>
+                     Loc: 11 km NE of San Martin, CA Mag: 0.87
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e904183b1ddf903ab616197a274fdb9e = L.circleMarker(
+                [36.7696, -116.2566],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": -0.2, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_e904183b1ddf903ab616197a274fdb9e.bindTooltip(
+                `<div>
+                     Loc: 47 km ESE of Beatty, Nevada Mag: -0.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7a0eed672577d47b8208e4beee7dd98e = L.circleMarker(
+                [38.796501159668, -122.794334411621],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.44, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_7a0eed672577d47b8208e4beee7dd98e.bindTooltip(
+                `<div>
+                     Loc: 4 km NW of The Geysers, CA Mag: 1.22
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c8cf2ce298c53ed2f60c9e04d03bce94 = L.circleMarker(
+                [38.7996673583984, -122.792663574219],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.62, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_c8cf2ce298c53ed2f60c9e04d03bce94.bindTooltip(
+                `<div>
+                     Loc: 4 km NW of The Geysers, CA Mag: 1.81
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f77416a07f2691afa4c057797fa839b9 = L.circleMarker(
+                [35.8173333, -118.5375],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.12, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_f77416a07f2691afa4c057797fa839b9.bindTooltip(
+                `<div>
+                     Loc: 12 km NW of Kernville, CA Mag: 1.56
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c50e27dc782924dee84d2dfcac64ecb4 = L.circleMarker(
+                [59.0899, -139.0517],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.4, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_c50e27dc782924dee84d2dfcac64ecb4.bindTooltip(
+                `<div>
+                     Loc: 63 km SE of Yakutat, Alaska Mag: 4.7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c147e47022d4a2a97bb9fbde68cb93ff = L.circleMarker(
+                [14.2343, -93.0679],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.6, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_c147e47022d4a2a97bb9fbde68cb93ff.bindTooltip(
+                `<div>
+                     Loc: 88 km SW of Puerto Madero, Mexico Mag: 4.3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5e8e27a6bad7a6d54a43f5bf04b9202b = L.circleMarker(
+                [59.9284, -153.5215],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_5e8e27a6bad7a6d54a43f5bf04b9202b.bindTooltip(
+                `<div>
+                     Loc: 36 km ENE of Pedro Bay, Alaska Mag: 2.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fc4edbea25c2488346aacf53bd405461 = L.circleMarker(
+                [63.2281, -155.3405],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_fc4edbea25c2488346aacf53bd405461.bindTooltip(
+                `<div>
+                     Loc: 32 km NNE of McGrath, Alaska Mag: 2.4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a632f5e3d86a94e2e53a9c5ad419e846 = L.circleMarker(
+                [35.3333333, -118.5505],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.56, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_a632f5e3d86a94e2e53a9c5ad419e846.bindTooltip(
+                `<div>
+                     Loc: 24 km NNW of Tehachapi, CA Mag: 1.28
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d3250a299e5fd5b0b6b313b4975caf76 = L.circleMarker(
+                [51.0934, 173.2577],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.6, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_d3250a299e5fd5b0b6b313b4975caf76.bindTooltip(
+                `<div>
+                     Loc: 195 km S of Attu Station, Alaska Mag: 4.3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4036ab9f500eb989c83c96eef75f38d4 = L.circleMarker(
+                [33.7601667, -116.9296667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.86, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_4036ab9f500eb989c83c96eef75f38d4.bindTooltip(
+                `<div>
+                     Loc: 4 km WNW of Valle Vista, CA Mag: 0.43
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4a2fae97319d143b5919235eadfe314d = L.circleMarker(
+                [38.7604, -118.6379],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.2, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_4a2fae97319d143b5919235eadfe314d.bindTooltip(
+                `<div>
+                     Loc: 16 km NE of Walker Lake, Nevada Mag: 1.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_72e76d113a340dbeae8df886081abf82 = L.circleMarker(
+                [61.4138, -146.4843],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_72e76d113a340dbeae8df886081abf82.bindTooltip(
+                `<div>
+                     Loc: 32 km NNW of Valdez, Alaska Mag: 1.2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_55fd841d5d4524a318f97d9b0f996f5a = L.circleMarker(
+                [19.3833332061768, -155.248672485352],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.74, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_55fd841d5d4524a318f97d9b0f996f5a.bindTooltip(
+                `<div>
+                     Loc: 6 km SSW of Volcano, Hawaii Mag: 1.87
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_959b1d0cb68c90e22323ba70cd3e860a = L.circleMarker(
+                [33.2481667, -115.9968333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.24, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_959b1d0cb68c90e22323ba70cd3e860a.bindTooltip(
+                `<div>
+                     Loc: 7 km SW of Salton City, CA Mag: 1.12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d926b2d3333278084c73ffd8ce71b37b = L.circleMarker(
+                [36.8296661376953, -121.591003417969],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.24, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_d926b2d3333278084c73ffd8ce71b37b.bindTooltip(
+                `<div>
+                     Loc: 5 km W of San Juan Bautista, CA Mag: 1.62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f545d5ec480284ad9e030707211747cf = L.circleMarker(
+                [36.5646, -115.485],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_f545d5ec480284ad9e030707211747cf.bindTooltip(
+                `<div>
+                     Loc: 16 km E of Indian Springs, Nevada Mag: 0.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e6fee89bd51259329e57e3d8b322cade = L.circleMarker(
+                [36.4572, -115.2489],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.2, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_e6fee89bd51259329e57e3d8b322cade.bindTooltip(
+                `<div>
+                     Loc: 29 km NW of Nellis Air Force Base, Nevada Mag: 1.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f95bd9d2874fd5703fcb2d7eef9e7823 = L.circleMarker(
+                [62.5416, -149.7049],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.8, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_f95bd9d2874fd5703fcb2d7eef9e7823.bindTooltip(
+                `<div>
+                     Loc: 22 km ENE of Chase, Alaska Mag: 1.4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3ff44110380bdae5fd7cb8461b3e710e = L.circleMarker(
+                [33.2459984, -116.2871704],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.34, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_3ff44110380bdae5fd7cb8461b3e710e.bindTooltip(
+                `<div>
+                     Loc: 8 km E of Borrego Springs, CA Mag: 1.17
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d7796beabb7b4c9e7a0425596165ec47 = L.circleMarker(
+                [34.0211667, -118.8038333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.72, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_d7796beabb7b4c9e7a0425596165ec47.bindTooltip(
+                `<div>
+                     Loc: 2 km NNE of Malibu, CA Mag: 2.36
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8afb7bc3130103975b946193533073da = L.circleMarker(
+                [33.1611667, -115.9911667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.64, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_8afb7bc3130103975b946193533073da.bindTooltip(
+                `<div>
+                     Loc: 13 km E of Ocotillo Wells, CA Mag: 0.82
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d774bcd082fbf177b75fdf6235b46c36 = L.circleMarker(
+                [19.3493328094482, -155.158004760742],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.42, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_d774bcd082fbf177b75fdf6235b46c36.bindTooltip(
+                `<div>
+                     Loc: 13 km SE of Volcano, Hawaii Mag: 1.71
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3482fca74bea6cf1afdfb19e576528c6 = L.circleMarker(
+                [19.2943333333333, -67.6046666666667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.54, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_3482fca74bea6cf1afdfb19e576528c6.bindTooltip(
+                `<div>
+                     Loc: 103 km NNW of San Antonio, Puerto Rico Mag: 3.27
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0d3b6fc7e5b79a54b872667df93f7031 = L.circleMarker(
+                [53.3838, -163.6133],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.6, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_0d3b6fc7e5b79a54b872667df93f7031.bindTooltip(
+                `<div>
+                     Loc: 164 km S of False Pass, Alaska Mag: 3.8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_62d9e4fbbadaed9d03bd229839a7cca9 = L.circleMarker(
+                [19.219165802002, -155.376327514648],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.67999982, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_62d9e4fbbadaed9d03bd229839a7cca9.bindTooltip(
+                `<div>
+                     Loc: 10 km E of Pāhala, Hawaii Mag: 2.33999991
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b420f6bda6dc14735075b05ae887e566 = L.circleMarker(
+                [19.854, -66.5901666666667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.84, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_b420f6bda6dc14735075b05ae887e566.bindTooltip(
+                `<div>
+                     Loc: 153 km N of Carrizales, Puerto Rico Mag: 3.42
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f70bf06a590349652a4bc54e57d7b8b8 = L.circleMarker(
+                [40.7184, -74.7725],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.4, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_f70bf06a590349652a4bc54e57d7b8b8.bindTooltip(
+                `<div>
+                     Loc: 5 km E of Califon, New Jersey Mag: 2.2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f7700af8f602665530c35c9b21affc23 = L.circleMarker(
+                [33.3573333, -116.4306667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.96, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_f7700af8f602665530c35c9b21affc23.bindTooltip(
+                `<div>
+                     Loc: 12 km NNW of Borrego Springs, CA Mag: 1.48
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9afe002dcd29a6888e08ad47f609f2f7 = L.circleMarker(
+                [32.094, -103.732],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.2, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_9afe002dcd29a6888e08ad47f609f2f7.bindTooltip(
+                `<div>
+                     Loc: 35 km ESE of Malaga, New Mexico Mag: 2.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_72a55984aead5ef0d33fba3c027171d1 = L.circleMarker(
+                [18.2236666666667, -67.3998333333333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.74, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_72a55984aead5ef0d33fba3c027171d1.bindTooltip(
+                `<div>
+                     Loc: 19 km SW of Stella, Puerto Rico Mag: 2.87
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_39a16d1ce3a366663340dee4a5a6319f = L.circleMarker(
+                [38.7854995727539, -122.768669128418],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.94, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_39a16d1ce3a366663340dee4a5a6319f.bindTooltip(
+                `<div>
+                     Loc: 1 km NW of The Geysers, CA Mag: 0.97
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_352a2d8146d433aa6613256787ac2e75 = L.circleMarker(
+                [61.5201, -151.2756],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_352a2d8146d433aa6613256787ac2e75.bindTooltip(
+                `<div>
+                     Loc: 40 km W of Susitna, Alaska Mag: 1.6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b760fec891d38042186f48f71415bae8 = L.circleMarker(
+                [36.7363, -116.1924],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_b760fec891d38042186f48f71415bae8.bindTooltip(
+                `<div>
+                     Loc: 50 km WNW of Indian Springs, Nevada Mag: 0.3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cba337c0118388e00858960d2a72872b = L.circleMarker(
+                [33.6306667, -116.6996667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": -0.04, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_cba337c0118388e00858960d2a72872b.bindTooltip(
+                `<div>
+                     Loc: 9 km NNW of Anza, CA Mag: -0.02
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dfa9e12384a54bfe1399ac0b97ccb848 = L.circleMarker(
+                [-55.2812, -29.0097],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.6, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_dfa9e12384a54bfe1399ac0b97ccb848.bindTooltip(
+                `<div>
+                     Loc: South Sandwich Islands region Mag: 5.3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d380be07758cf79297981b70507a9ff7 = L.circleMarker(
+                [63.9629, -147.2665],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_d380be07758cf79297981b70507a9ff7.bindTooltip(
+                `<div>
+                     Loc: 55 km SW of Harding-Birch Lakes, Alaska Mag: 1.2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_84f5624d3f5e1b032fc6c746f7cb6aba = L.circleMarker(
+                [19.1801662445068, -155.495666503906],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.96, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_84f5624d3f5e1b032fc6c746f7cb6aba.bindTooltip(
+                `<div>
+                     Loc: 3 km SW of Pāhala, Hawaii Mag: 1.98
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fd412c3f5fb3d75d7d32f011c9fe7744 = L.circleMarker(
+                [35.7466667, -117.5548333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.96, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_fd412c3f5fb3d75d7d32f011c9fe7744.bindTooltip(
+                `<div>
+                     Loc: 14 km W of Searles Valley, CA Mag: 0.48
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0a469dbbb8d50ab92976257e910cfc81 = L.circleMarker(
+                [60.7863, -146.1944],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_0a469dbbb8d50ab92976257e910cfc81.bindTooltip(
+                `<div>
+                     Loc: 27 km ESE of Tatitlek, Alaska Mag: 1.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8197a9dfbf94d51a396fbc638c64efa6 = L.circleMarker(
+                [-9.1184, -109.6742],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.8, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_8197a9dfbf94d51a396fbc638c64efa6.bindTooltip(
+                `<div>
+                     Loc: central East Pacific Rise Mag: 4.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0847a514520467f1180e58de87ee6b42 = L.circleMarker(
+                [59.5353, -152.9128],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_0847a514520467f1180e58de87ee6b42.bindTooltip(
+                `<div>
+                     Loc: 59 km WNW of Nanwalek, Alaska Mag: 2.4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_85424773f9118be35dfb7f882cb42f47 = L.circleMarker(
+                [54.7495, 167.8879],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.8, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_85424773f9118be35dfb7f882cb42f47.bindTooltip(
+                `<div>
+                     Loc: Komandorskiye Ostrova, Russia region Mag: 4.4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1ae15e7562c04a202c660103566e3435 = L.circleMarker(
+                [37.6549, -117.2897],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_1ae15e7562c04a202c660103566e3435.bindTooltip(
+                `<div>
+                     Loc: 7 km SW of Goldfield, Nevada Mag: 1.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e790bd3dcd1c1a33ab8ff2d18559e11 = L.circleMarker(
+                [64.125, -147.2694],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.2, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_2e790bd3dcd1c1a33ab8ff2d18559e11.bindTooltip(
+                `<div>
+                     Loc: 42 km SW of Harding-Birch Lakes, Alaska Mag: 2.6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b7f44924a7604023b8d77d12905f6fc6 = L.circleMarker(
+                [38.7949981689453, -122.732666015625],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_b7f44924a7604023b8d77d12905f6fc6.bindTooltip(
+                `<div>
+                     Loc: 3 km ENE of The Geysers, CA Mag: 1.25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae3383e41cad2da70fcb606846592157 = L.circleMarker(
+                [-56.3605, -27.6628],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.4, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_ae3383e41cad2da70fcb606846592157.bindTooltip(
+                `<div>
+                     Loc: South Sandwich Islands region Mag: 4.7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_45eaa2977fd8bf72875f64cc2ac98eab = L.circleMarker(
+                [38.8376655578613, -122.792167663574],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.86, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_45eaa2977fd8bf72875f64cc2ac98eab.bindTooltip(
+                `<div>
+                     Loc: 6 km WNW of Cobb, CA Mag: 0.93
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0cc5ec1a0f891d89b9a623398837e216 = L.circleMarker(
+                [33.6928333, -116.7823333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.36, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_0cc5ec1a0f891d89b9a623398837e216.bindTooltip(
+                `<div>
+                     Loc: 8 km SW of Idyllwild, CA Mag: 0.68
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9b00cf9dbf3de842b749cd75df759ccd = L.circleMarker(
+                [19.3775005340576, -155.180160522461],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.9, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_9b00cf9dbf3de842b749cd75df759ccd.bindTooltip(
+                `<div>
+                     Loc: 9 km SE of Volcano, Hawaii Mag: 1.95
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0b875fb2fd8efc6685217b555964e031 = L.circleMarker(
+                [33.2613333, -116.1058333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.4, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_0b875fb2fd8efc6685217b555964e031.bindTooltip(
+                `<div>
+                     Loc: 13 km N of Ocotillo Wells, CA Mag: 0.7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ce2634b930f106606870f18105729864 = L.circleMarker(
+                [17.9881666666667, -66.9911666666667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.72, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_ce2634b930f106606870f18105729864.bindTooltip(
+                `<div>
+                     Loc: 6 km ENE of La Parguera, Puerto Rico Mag: 2.36
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4763b5b5e859d96e40ae174a8ee4e010 = L.circleMarker(
+                [38.8214988708496, -122.823669433594],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_4763b5b5e859d96e40ae174a8ee4e010.bindTooltip(
+                `<div>
+                     Loc: 8 km NW of The Geysers, CA Mag: 0.25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81d06eaa9dfb219e51ff3696b5724857 = L.circleMarker(
+                [17.9775, -66.8338333333333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_81d06eaa9dfb219e51ff3696b5724857.bindTooltip(
+                `<div>
+                     Loc: 2 km SW of Indios, Puerto Rico Mag: 3.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_72861a984dd6f60d3aae381f100afa9d = L.circleMarker(
+                [38.8255004882812, -122.845664978027],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_72861a984dd6f60d3aae381f100afa9d.bindTooltip(
+                `<div>
+                     Loc: 9 km NW of The Geysers, CA Mag: 0.45
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bf1d2a9da64a7c2d57576ab0d70b5ebc = L.circleMarker(
+                [36.5311, 70.0771],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.2, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_bf1d2a9da64a7c2d57576ab0d70b5ebc.bindTooltip(
+                `<div>
+                     Loc: 20 km ESE of Farkhār, Afghanistan Mag: 4.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e181b0556afcc6cf162f2cc512585f0d = L.circleMarker(
+                [38.8223342895508, -122.842002868652],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.36, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_e181b0556afcc6cf162f2cc512585f0d.bindTooltip(
+                `<div>
+                     Loc: 9 km NW of The Geysers, CA Mag: 0.68
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b5252f4229d963479492acf771f2fd90 = L.circleMarker(
+                [33.7633333, -116.9283333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.28, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_b5252f4229d963479492acf771f2fd90.bindTooltip(
+                `<div>
+                     Loc: 4 km SE of San Jacinto, CA Mag: 0.64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_529aa67962464b4a70a6cf85cd200134 = L.circleMarker(
+                [33.2201667, -116.0438333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.74, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_529aa67962464b4a70a6cf85cd200134.bindTooltip(
+                `<div>
+                     Loc: 12 km NE of Ocotillo Wells, CA Mag: 1.37
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3a15c68ac773e9cfd0365bfc9702978f = L.circleMarker(
+                [61.6247, -150.8988],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.2, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_3a15c68ac773e9cfd0365bfc9702978f.bindTooltip(
+                `<div>
+                     Loc: 22 km WNW of Susitna, Alaska Mag: 2.6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_773a7d02a375d2e06d72cbfa0f6feab5 = L.circleMarker(
+                [19.3934993743896, -155.252838134766],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.32, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_773a7d02a375d2e06d72cbfa0f6feab5.bindTooltip(
+                `<div>
+                     Loc: 5 km SSW of Volcano, Hawaii Mag: 2.16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3f3da5ba38a512d04adbbf74fd5668ee = L.circleMarker(
+                [38.8095016479492, -122.821662902832],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.94, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_3f3da5ba38a512d04adbbf74fd5668ee.bindTooltip(
+                `<div>
+                     Loc: 7 km NW of The Geysers, CA Mag: 0.97
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1a76332b9b6b930eeea286c59816025d = L.circleMarker(
+                [17.9826666666667, -66.8198333333333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.7, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_1a76332b9b6b930eeea286c59816025d.bindTooltip(
+                `<div>
+                     Loc: 1 km S of Indios, Puerto Rico Mag: 2.35
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_25ebc0ffe6d5ec1f77def853867c1e43 = L.circleMarker(
+                [62.1661, -149.6941],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_25ebc0ffe6d5ec1f77def853867c1e43.bindTooltip(
+                `<div>
+                     Loc: 8 km E of Susitna North, Alaska Mag: 1.7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_10153bd2cdc2e250e6098e746a7e2d44 = L.circleMarker(
+                [33.0438333, -116.3891667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.64, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_10153bd2cdc2e250e6098e746a7e2d44.bindTooltip(
+                `<div>
+                     Loc: 20 km E of Julian, CA Mag: 1.32
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f22336fc758af0d159135e4de006b1ec = L.circleMarker(
+                [19.3798332214355, -155.172836303711],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.44, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_f22336fc758af0d159135e4de006b1ec.bindTooltip(
+                `<div>
+                     Loc: 9 km SE of Volcano, Hawaii Mag: 1.72
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_00dec20ade13a6073a8e26c38886a555 = L.circleMarker(
+                [33.6643333, -116.7448333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.36, "stroke": true, "weight": 3}
+            ).addTo(map_5e105f1177dc4f810a32dd57e713086c);
+        
+    
+            circle_marker_00dec20ade13a6073a8e26c38886a555.bindTooltip(
+                `<div>
+                     Loc: 9 km SSW of Idyllwild, CA Mag: 0.68
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
